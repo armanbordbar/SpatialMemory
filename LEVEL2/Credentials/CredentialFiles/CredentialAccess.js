@@ -150,7 +150,7 @@ async function SendTheAuthorInfo(id, pass)  {
         },
         body: JSON.stringify(author_credentials)
     };
-    const confirm_feedbk = await fetch('/MD/LEVEL2/Credentials/authors', options);
+    const confirm_feedbk = await fetch('/LEVEL2/Credentials/authors', options);
     const validate_feedbk = await confirm_feedbk.json();
     if(validate_feedbk.status == 'exists') {
         alert('you are in');
@@ -212,7 +212,7 @@ async function SendTheUserInfo(email, id)  {
         },
         body: JSON.stringify(user_credentials)
     };
-    const confirm_feedbk = await fetch('/MD/LEVEL2/Credentials/users', options);
+    const confirm_feedbk = await fetch('/LEVEL2/Credentials/users', options);
     const validate_feedbk = await confirm_feedbk.json();
     if(validate_feedbk.status == "noexists") {
         alert('User registration finished');

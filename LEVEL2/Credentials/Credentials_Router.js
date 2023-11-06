@@ -9,14 +9,19 @@ MDL2_credentials_router.use(bodyParser.urlencoded({ extended: false }));
 MDL2_credentials_router.use(bodyParser.json());
 MDL2_credentials_router.use(express.json({ limit: '10mb'}));
 var credentials_path = path.join(__dirname + '/CredentialFiles');
+console.log(credentials_path);
 MDL2_credentials_router.use(express.static(credentials_path));
 let author_db_path = path.join(__dirname + '/MDL2AuthorsDB.js');
+console.log(author_db_path);
 let author_db = require(author_db_path);
 const Author_DBSOURCE = path.join(__dirname + '/author_db.sqlite');
 var Author_db = new sqlite3.Database(Author_DBSOURCE);
 let user_db_path = path.join(__dirname + '/MDL2UsersDB.js');
+console.log(user_db_path);
 let user_db = require(user_db_path);
 const USER_DBSOURCE = path.join(__dirname + '/user_db.sqlite');
+console.log(USER_DBSOURCE);
+
 var User_db = new sqlite3.Database(USER_DBSOURCE);
 
 MDL2_credentials_router.post('/authors', (req1, res1) => {

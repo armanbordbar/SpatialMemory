@@ -984,7 +984,7 @@ function shuffle(array) {
 		  },
 		  body: JSON.stringify(user_demos)
 	  };
-	  const end_feedbk = await fetch('/MD/LEVEL2/Credentials/usersDemo', options);
+	  const end_feedbk = await fetch('/LEVEL2/Credentials/usersDemo', options);
 	  const ifOK_feedbk = await end_feedbk.json();
   
 	  if(ifOK_feedbk.status == "done") {
@@ -1594,7 +1594,7 @@ function shuffle(array) {
 		  },
 		  body: JSON.stringify(Please)
 	  };
-	  const response = await fetch('/MD/LEVEL2/ExpSeq', options);
+	  const response = await fetch('/LEVEL2/ExpSeq', options);
 	  const json = await response.json();
 	  ExpSeq = await JSON.parse(json);
 	  LetsStartExp();
@@ -1610,7 +1610,7 @@ function shuffle(array) {
 			  },
 			  body: JSON.stringify(MDExperiment)
 		  };
-		  const finishMes = await fetch('/MD/LEVEL2/ExpData', options);
+		  const finishMes = await fetch('/LEVEL2/ExpData', options);
 		  const FinishMessage = await finishMes.json();
 		  //const LastMessage = await JSON.parse(FinishMessage);
 		  if(FinishMessage.status == "Receiving MD Level 2 Experiment Results with Success") {
@@ -1631,7 +1631,7 @@ function shuffle(array) {
 			  },
 			  body: JSON.stringify(MDL2SubjInfo)
 		  };
-		  const UsrAUTmessage = await fetch('/MD/LEVEL2/Credentials/authentication', options);
+		  const UsrAUTmessage = await fetch('/LEVEL2/Credentials/authentication', options);
 		  const UsrAUTfeedback = await UsrAUTmessage.json();
 		  //const LastMessage = await JSON.parse(FinishMessage);
 		  if(UsrAUTfeedback.status == "authenticated") {

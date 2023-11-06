@@ -6,11 +6,11 @@ const path = require('path');
 
 
 // MD Router
-var MDL2_router_path = path.join(__dirname + '/MD/LEVEL2/MDL2_config.js');
+var MDL2_router_path = path.join(__dirname + '/LEVEL2/MDL2_config.js');
 var MDL2_router = require(MDL2_router_path);
 console.log(MDL2_router_path)
 
-app.use('/MD/LEVEL2', MDL2_router);
+app.use('/LEVEL2', MDL2_router);
 app.use(express.json({ limit: '10mb'}));
 
 const HTTP_PORT = process.env.HTTP_PORT || 3000;
