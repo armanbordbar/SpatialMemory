@@ -2,10 +2,11 @@
   "name": "zlab-online-spatial-memory-test",
   "version": "1.0.0",
   "description": "Express REST API version of Dr. Zeynep Saygin Spatial Memory Test",
+  "repository": "https://github.com/render-examples/express-hello-world",
   "main": "server.js",
+  "private": false,
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Me",
   "license": "ISC",
@@ -20,5 +21,8 @@
     "python-shell": "^5.0.0",
     "sqlite3": "^5.1.6",
     "util": "^0.12.5"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
