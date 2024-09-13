@@ -6,6 +6,7 @@
   "main": "server.js",
   "private": false,
   "scripts": {
+    "build": "pip install numpy",
     "start": "node server.js"
   },
   "author": "Me",
