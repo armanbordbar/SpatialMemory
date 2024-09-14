@@ -8,7 +8,7 @@ const path = require('path');
 // MD Router
 var MDL2_router_path = path.join(__dirname + '/LEVEL2/MDL2_config.js');
 var MDL2_router = require(MDL2_router_path);
-console.log('Path to The MDL2_config.js: ' + MDL2_router_path);
+console.log('Path to The MDL2_config.js: ', MDL2_router_path);
 
 app.use('/LEVEL2', MDL2_router);
 app.use(express.json({ limit: '10mb'}));
