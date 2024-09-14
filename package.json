@@ -6,7 +6,6 @@
   "main": "server.js",
   "private": false,
   "scripts": {
-    "build": "pip install numpy",
     "start": "node server.js"
   },
   "author": "Me",
@@ -22,8 +21,5 @@
     "python-shell": "^5.0.0",
     "sqlite3": "^5.1.6",
     "util": "^0.12.5"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
