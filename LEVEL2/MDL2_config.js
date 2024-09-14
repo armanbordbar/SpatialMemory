@@ -19,7 +19,7 @@ MDL2_router.post('/ExpSeq', (request, response) => {
   var pythonOptions = {
     mode: 'json',
     scriptPath: __dirname,
-    pythonPath: '/usr/bin/python'
+    pythonPath: '/usr/bin/python3'
 }
 var pyshell = new PythonShell("/BlockOrdering.py", pythonOptions);
 var pythonData = new Object();
